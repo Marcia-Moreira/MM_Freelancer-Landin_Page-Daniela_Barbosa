@@ -195,8 +195,7 @@ section {
     background: linear-gradient(#3D9776, #79A97D, #3D9776);
     transition-duration: 0.3s;
 }
-.botao-retornar i,
-.botao-retornar a:hover {
+.botao-retornar:hover {
     transform: scale(1.05);
 }
 
