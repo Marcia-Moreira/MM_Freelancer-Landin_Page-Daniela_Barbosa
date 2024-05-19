@@ -1,0 +1,237 @@
+.paleta-cores {
+    color: #F1E2CA;
+    color: #D1CEA9;
+    color: #A9BB8F;
+    color: #79A97D;
+    color: #3D9776;
+}
+.paleta-cores-apoio {
+    color: #5F6F52;
+    color: #052E26;
+    color: #134842;
+}
+body {
+    background-color: #3D9776;
+    /* background: radial-gradient(#ff7f50, #fff, #ff7f50); */
+    color: #052E26;
+    font-family: sans-serif;
+    text-align: center;
+}
+.card {
+    border: 1px solid #052E26;
+    border-radius: 16px;
+    box-shadow: 0 0 15px #A9BB8F;
+    width: 600px;
+    /* Dentro da tag body a centralização, só funciona assim: margin:0 auto */
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* obs: centralizou até foto e icons!! */
+    text-align: center;
+    padding: 32px;
+
+    /* background: linear-gradient(#824334, #fff3, #824334); */
+    background-color: #79A97D;
+    backdrop-filter: blur(20px);
+}
+.perfil img {
+    border: 1px solid #3D9776;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    box-shadow: 0 0 25px #052E26;
+    transition-duration: 0.3s;
+}
+.perfil img:hover {
+    transform: scale(1.1);
+}
+.perfil h1 {
+    font-size: 34px;
+    color: #052E26;
+    text-shadow: 0px 0px 1px #79A97D;
+    transition-duration: 0.3s;
+}
+.perfil h1:hover {
+    transform: scale(1.1);
+}
+.perfil h3 {
+    color: #052E26;
+    color: #134842;
+}
+.perfil h3 a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Mantém a cor do elemento pai */
+    font-size: inherit;
+}
+.redes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 32px;
+}
+.redes a {
+    color: #052E26;
+    text-decoration: none;
+    border: 1px solid;
+    box-shadow: 0 0 5px #A9BB8F;
+    padding: 8px;
+    border-radius: 8px;
+    background: linear-gradient(#3D9776, #79A97D, #3D9776);
+    transition-duration: 0.3s;
+}
+.redes a:hover {
+    transform: scale(1.1);
+}
+.minibio {
+    border: 1px solid #052E26;
+    padding: 8px;
+    border-radius: 8px;
+    background: linear-gradient(#3D9776, #79A97D, #3D9776);
+    box-shadow: 0 0 5px #A9BB8F;
+    transition-duration: 0.3s;
+}
+.minibio:hover {
+    transform: scale(1.1);
+}
+.minibio strong {
+    color: #134842;
+}
+.assinatura-MM {
+    font-size: 11px;
+    color: #052E26;
+    padding-top: 20px;
+    transition-duration: 0.3s;
+}
+.assinatura-MM:hover {
+    transform: scale(1.1);
+}
+
+/* Responsividade:  */
+@media (max-width: 960px) {
+    .card {
+        width: 400px;
+    }
+    .perfil img {
+        width: 170px;
+        height: 170px;
+    }
+    .perfil h1 {
+        font-size: 28px;
+    }
+    .perfil h3 {
+        font-size: medium;
+    }
+    .redes {
+        height: 100%;
+        transition: 0.3s;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 20px;      
+    }
+    .redes a {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .minibio {
+        font-size: 16px;
+    }
+    .minha-assinatura {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 610px) {
+    .card {
+        width: 250px;
+    }
+    .perfil img {
+        width: 150px;
+        height: 150px;
+    }
+    .perfil h1 {
+        font-size: 25px;
+    }
+    .perfil h3 {
+        font-size: medium;
+    }
+    .redes {
+        margin-bottom: 10px;
+    }
+    .redes a {
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+    .minibio {
+        font-size: 15px;
+    }
+    .minha-assinatura {
+        font-size: 08px;
+    }
+}
+
+/* ======================================================== */
+/* Catálogo */
+section {
+    color: #5F6F52;
+}
+.produto {
+    border: 1px solid #052E26;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 25px #3D9776;
+    transition-duration: 0.3s;
+}
+.produto:hover {
+    transform: scale(1.1);
+}
+.produto img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin: 15%;
+    border: 1px solid #3D9776;
+    box-shadow: 0 0 25px #052E26;
+    transition-duration: 0.3s;
+}
+.produto img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsividade:  */
+@media (max-width: 960px) {
+    .produto {
+        border: 1px solid #052E26;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    .produto-detalhes p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 610px) {
+    .produto {
+        border: 1px solid #052E26;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    .produto img {
+        width: 100px;
+        height: auto;
+        gap: 20px;
+        display: flex;
+    }
+    .produto-detalhes p {
+        font-size: 15px;
+    }
+}
