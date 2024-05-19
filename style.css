@@ -80,7 +80,7 @@ body {
     transition-duration: 0.3s;
 }
 .redes a:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .minibio {
     border: 1px solid #052E26;
@@ -91,19 +91,31 @@ body {
     transition-duration: 0.3s;
 }
 .minibio:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 .minibio strong {
     color: #134842;
 }
 .assinatura-MM {
-    font-size: 11px;
-    color: #052E26;
-    padding-top: 20px;
+    margin-top: 20px;
     transition-duration: 0.3s;
 }
 .assinatura-MM:hover {
+    margin-top: 25px;
     transform: scale(1.1);
+}
+
+.assinatura-MM a {
+    font-size: 11px;
+    color: #052E26;
+    /* padding-top: 20px; */
+    transition-duration: 0.3s;
+    line-height: 0.4;
+    text-decoration: none;
+}
+.assinatura-MM:hover a {
+    transform: scale(1.1);
+    margin-top: 10px;
 }
 
 /* Responsividade:  */
@@ -135,7 +147,7 @@ body {
     .minibio {
         font-size: 16px;
     }
-    .minha-assinatura {
+    .assinatura-MM a {
         font-size: 10px;
     }
 }
@@ -164,7 +176,7 @@ body {
     .minibio {
         font-size: 15px;
     }
-    .minha-assinatura {
+    .assinatura-MM a {
         font-size: 08px;
     }
 }
@@ -174,6 +186,20 @@ body {
 section {
     color: #5F6F52;
 }
+.botao-retornar i,
+.botao-retornar a {
+    text-decoration: none;
+    color: #052E26;
+    padding: 8px;
+    border-radius: 8px;
+    background: linear-gradient(#3D9776, #79A97D, #3D9776);
+    transition-duration: 0.3s;
+}
+.botao-retornar i,
+.botao-retornar a:hover {
+    transform: scale(1.05);
+}
+
 .produto {
     border: 1px solid #052E26;
     display: flex;
@@ -186,7 +212,8 @@ section {
     transition-duration: 0.3s;
 }
 .produto:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
+    padding: auto;
 }
 .produto img {
     width: 150px;
@@ -199,6 +226,10 @@ section {
 }
 .produto img:hover {
     transform: scale(1.1);
+}
+.vestuario {
+    border-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 /* Responsividade:  */
